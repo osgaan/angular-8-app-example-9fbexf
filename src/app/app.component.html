@@ -1,0 +1,13 @@
+<hello name="{{ name }}"></hello>
+<p>Start editing to see some magic happen :)</p>
+
+<div class="items">
+  <div *ngfor="let item of items$ | async">
+    <b>ID: </b> {{ item.id }}<br />
+    <b>Title: </b>{{ item.title }}<br />
+    <img src="{{ item.thumbnailUrl }}" alt="" />
+    <br />
+    <br />
+    <br />
+  </div>
+</div>
